@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+html, body {
+    height: 100%;
+}
+
+.background-image {
+    background-image: url(../images/login-page-background-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+.login-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 700px;
+    width: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    opacity: 0.8;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+.login-header {
+    background-color: hsl(339, 94%, 25%);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: 30%;
+}
+
+.hau-logo {
+    height: auto;
+    width: 100%;
+}
+
+.login-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(255, 100%, 100%);
+    padding: 30px;
+    height: 70%;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.student-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}
+
+.student-number input, .student-password input, .process-info, .login-button input {
+    width: 420px;
+}
+
+.student-number, .student-password {
+    position: relative;
+    input {
+        height: 60px;
+        border-radius: 5px;
+        font-size: 30px;
+        padding: 10px 10px 10px 50px;
+    }
+    i {
+        left: 15px;
+        top: 15px;
+        position: absolute;
+        font-size: 30px;
+        color: hsl(0, 0%, 50%);
+    }
+}
+
+.process-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 60px;
+}
+
+.login-button {
+    input {
+        height: 60px;
+        font-size: 30px;
+        border-radius: 5px;
+    }
+}
+
+.school-info {
+    text-align: center;
+}

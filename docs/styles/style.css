@@ -6,15 +6,12 @@
     
 }
 
-body {
+.login-container {
+    height: 100vh;
     background-image: url(../images/login-page-background-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
-
-.login-container {
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,7 +40,7 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            background-color: #ffffff;
+            background-color: #f7f1e4;
             form {
                 display: flex;
                 flex-direction: column;
@@ -63,6 +60,7 @@ body {
                         .student-number, .student-password {
                             position: relative;
                             input {
+                                border: 0px;
                                 height: 60px;
                                 padding: 10px 10px 10px 50px;
                                 border-radius: 5px;
@@ -186,3 +184,101 @@ body {
     }
 }
 
+.dashboard {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .header {
+        height: 150px;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        background-color: #7c042e;
+        img {
+            height: 100%;
+            border-radius: 100%;
+        }
+        h1 {
+            font-family: "Oswald";
+            font-weight: bold;
+            font-size: 50px;
+            text-wrap: nowrap;
+        }
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 40px;
+        gap: 40px;
+        flex: 1;
+        .text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 5px;
+            h1 {
+                font-family: "Oswald";
+                font-weight: bold;
+                font-size: 40px;
+            }
+            p {
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+        .cards {
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+            .schedule, .calendar {
+                border-radius: 20px;
+                overflow: hidden;
+            }
+            div {
+                height: 500px;
+                width: 700px;
+                .header {
+                    height: 20%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #7c042e;
+                    h1 {
+                        font-family: "Oswald";
+                        font-weight: bold;
+                        font-size: 40px;
+                    }
+                }
+                .body {
+                    height: 80%;
+                    background-color: #f7f1e4;
+                }
+            }
+        }
+    }
+    .footer {
+        height: 50px;
+        width: 100%;
+        background-color: #7c042e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        p {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 20px;
+            color: #bdbdbd;
+        }
+    }
+}

@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #7c042e;
+    --secondary-color: #f7f1e4;
+    --tertiary-color: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +12,14 @@
     
 }
 
-.login-container {
+.index {
     height: 100vh;
     background-image: url(../images/login-page-background-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-color: #808080;
+    background-blend-mode: luminosity;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,6 +27,7 @@
         height: 700px;
         width: 500px;
         border-radius: 20px;
+        box-shadow: 5px 5px 5px;
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -28,7 +37,7 @@
             padding: 20px;
             display: flex;
             align-items: center;
-            background-color: #7c042e;
+            background-color: var(--primary-color);
             .hau-logo {
                 width: 100%;
                 height: auto;
@@ -40,7 +49,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            background-color: #f7f1e4;
+            background-color: var(--secondary-color);
             form {
                 display: flex;
                 flex-direction: column;
@@ -81,12 +90,12 @@
                     }
                 }
                 .login-button {
-                    input {
+                    input[type="submit"] {
                         height: 60px;
                         border: 0px;
                         border-radius: 5px;
-                        background-color: #7c042e;
-                        color: #ffffff;         
+                        background-color: var(--primary-color);
+                        color: #ffffff;
                         font-size: 30px;
                     }
                 }
@@ -101,7 +110,7 @@
 }
 
 @media only screen and (max-height: 750px) {
-    .login-container {
+    .index {
         .login-content {
             height: 550px;
             width: 400px;
@@ -127,7 +136,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .login-container {
+    .index {
         .login-content {
             height: 550px;
             width: 400px;
@@ -153,7 +162,7 @@
 }
 
 @media only screen and (max-width: 450px) {
-    .login-container {
+    .index {
         .login-content {
             height: 500px;
             width: 300px;
@@ -198,7 +207,7 @@
         align-items: center;
         justify-content: space-between;
         color: white;
-        background-color: #7c042e;
+        background-color: var(--primary-color);
         img {
             height: 100%;
             border-radius: 100%;
@@ -253,7 +262,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    background-color: #7c042e;
+                    background-color: var(--primary-color);
                     h1 {
                         font-family: "Oswald";
                         font-weight: bold;
@@ -270,7 +279,7 @@
     .footer {
         height: 50px;
         width: 100%;
-        background-color: #7c042e;
+        background-color: var(--primary-color);
         display: flex;
         align-items: center;
         justify-content: center;

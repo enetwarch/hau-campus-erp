@@ -3,119 +3,73 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
+
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/style.css">
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0541e3b46f.js" crossorigin="anonymous"></script>
+
     </head>
 
     <body class="dashboard">
 
-            <div class="header">
+        <header class="flex-row center-between">
+            <section class="flex-row center-start">
                 <img src="images/favicon.png">
-                <h1>STUDENT PORTAL</h1>
+                <aside class="flex-column justify-center left-align">
+                    <h2 class="bricolage-grotesque-bold white-text">Holy Angel University</h2>
+                    <p class="bricolage-grotesque-normal white-text small-p">BS in Computer Science</p>
+                </aside>
+            </section>
+            <section class="flex-row center-center">
+                <h1 class="bricolage-grotesque-bold white-text">Campus Portal</h1>
+            </section>
+            <section class="flex-row center-end">
+                <aside class="flex-column justify-center right-align">
+                    <h2 class="bricolage-grotesque-bold white-text">Bernardo, Roman Jacob</h2>
+                    <p class="bricolage-grotesque-normal white-text small-p">First Year College Student</p>
+                </aside>
                 <img src="images/roman-jacob-bernardo.jpg">
-            </div>
+            </section>
+        </header>
 
-            <div class="nav">
-                <ul>
-                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ACTIONS RECEIVABLE</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">STUDENT INFORMATION</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ENROLLMENT SUPPORT</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">LIBRARY SUPPORT</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">QUESTION/CONTRIBUTION MANAGEMENT</a></li>
-                </ul>
-            </div>
+        <nav class="flex-row center-between grow center-align">
+            <a href="dashboard.html" id="currentPage">
+                <p class="bricolage-grotesque-bold primary-text"><i class="fa-solid fa-table-columns"></i> Dashboard</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <p class="bricolage-grotesque-bold primary-text"><i class="fa-solid fa-user"></i> Student Info</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <p class="bricolage-grotesque-bold primary-text"><i class="fa-solid fa-right-to-bracket"></i> Enrollment</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <p class="bricolage-grotesque-bold primary-text"><i class="fa-solid fa-book"></i> Library Support</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <p class="bricolage-grotesque-bold primary-text"><i class="fa-solid fa-bars-progress"></i> Management</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <p class="bricolage-grotesque-bold primary-text"><i class="fa-solid fa-gear"></i> Settings</p>
+            </a>
+        </nav>
 
-            <div class="content">
-                <div class="text">
-                    <h1>BERNARDO, ROMAN JACOB L.</h1>
-                    <p>BS in Computer Science</p>
-                    <p>SY 2024, 2nd Semester</p>
-                </div>
-                <div class="cards">
-                    <div class="schedule">
-                        <div class="header">
-                            <h1>CLASS SCHEDULE</h1>
-                        </div>
-                        <div class="body">
-                            <img src="images/class-schedule.png">
-                        </div>
-                    </div>
-                    <div class="calendar">
-                        <div class="header">
-                            <h1>SCHOOL CALENDAR</h1>
-                        </div>
-                        <div class="body">
-                            <h1>FEBRUARY 2025</h1>
-                            <div class="weeks">
-                                <div>SUN</div>
-                                <div>MON</div>
-                                <div>TUE</div>
-                                <div>WED</div>
-                                <div>THU</div>
-                                <div>FRI</div>
-                                <div>SAT</div>
-                            </div>
-                            <div class="row">
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>26</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>27</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>28</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>29</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>30</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>31</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>1</div></a>
-                            </div>
-                            <div class="row">
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>2</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>3</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>4</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>5</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div class="no-classes">6</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>7</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>8</div></a>
-                            </div>
-                            <div class="row">
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>9</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>10</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>11</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div class="current-day">12</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div class="major-event">13</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div class="major-event">14</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>15</div></a>
-                            </div>
-                            <div class="row">
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>16</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>17</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>18</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>19</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>20</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>21</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>22</div></a>
-                            </div>
-                            <div class="row">
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>23</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>24</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div class="no-classes">25</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div class="no-classes">26</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>27</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>28</div></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><div>1</div></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <main class="flex-row center-center grow">
 
-            <div class="footer">
-                <p>All rights reserved, © 2020 DATAMOBILITY Corporation Philippines. Unit 1103, 11th Floor, Galleria Corporate Center, EDSA cor. Ortigas Ave. Ugong Norte Quezon City Telephone: (02) 914-2960</p>
-            </div>
+            <img src="images/dashboard-content.png">
+            
+        </main>
+
+        <footer class="flex-row center-center">
+            <p class="bricolage-grotesque-normal center-align white-text small-p">All rights reserved, © 2020 DATAMOBILITY Corporation Philippines. Unit 1103, 11th Floor, Galleria Corporate Center, EDSA cor. Ortigas Ave. Ugong Norte Quezon City Telephone: (02) 914-2960</p>
+        </footer>
 
     </body>
 

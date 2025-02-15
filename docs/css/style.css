@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    font-family: "Bricolage Grotesque", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #6f151e;
+    --secondary-color: #f7f1e4;
+    --light-color-1: #fafafa;
+    --light-color-2: #e8e8e8;
+    --dark-color-1: #252525;
+    --dark-color-2: #444444;
+    --large-sizing: 2rem;
+    --medium-sizing: 1rem;
+    --small-sizing: 0.75rem;
+    --extra-small-sizing: 0.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body,
+.card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    justify-content: center;
+    min-height: 100vh;
+    padding: var(--large-sizing);
+    width: 100%;
+}
+
+.card {
+    background-color: var(--light-color-1);
+    border-radius: var(--large-sizing);
+    box-shadow: 1px 1px 6px var(--dark-color-2);
+    flex: 1;
+    gap: var(--medium-sizing);
+    padding: var(--large-sizing);
+}
+
+.card .primary-block,
+.card .secondary-block,
+.card .blank-block {
+    border: 0px;
+    border-radius: var(--medium-sizing);
+    display: flex;
+    width: 100%;
+}
+
+.card .primary-block,
+.card .secondary-block {
+    padding: var(--medium-sizing);
+    align-items: center;
+    gap: var(--medium-sizing);
+    font-weight: bold;
+}
+
+.card .primary-block {
+    background-color: var(--primary-color);
+    color: var(--light-color-2);
+    margin: 10rem, 0px;
+}
+
+.card .secondary-block {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.card .blank-block {
+    color: var(--dark-color-2);
+    gap: var(--small-sizing);
+}
+
+.card .blank-block.column {
+    flex-direction: column;
+}
+
+.card .blank-block.space-between {
+    justify-content: space-between;
+}
+
+.card .blank-block.flex-end {
+    justify-content: flex-end;
+}
+
+.card .blank-block.extra-small-gap {
+    gap: var(--extra-small-sizing);
+}
+
+.card .blank-block.small-text {
+    font-size: var(--small-sizing);
+}
+
+.card .blank-block.center-text {
+    text-align: center;
+}
+
+.card .blank-block.center-align {
+    align-items: center;
+}
+
+.login {
+    background-image: url("../img/bg-pattern.jpg");
+}
+
+.login .card {
+    flex: 0;
+    max-width: 400px;
+    min-width: 200px
+}
+
+.login .primary-block {
+    margin-block: var(--medium-sizing);
+}
+
+.login input {
+    font-size: var(--medium-sizing);
+}
+
+.login input::placeholder {
+    font: inherit;
+    color: inherit;
+}
+
+.login i.input-anchor {
+    padding: calc(var(--small-sizing) + var(--extra-small-sizing));
+    position: absolute;
+    color: var(--primary-color);
+}
+
+.login input.secondary-block {
+    padding-left: calc(var(--large-sizing) + var(--small-sizing));
+}
+
+.logo {
+    max-height: 75px;
+}

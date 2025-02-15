@@ -3,61 +3,69 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
+
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Campus Login</title>
+        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>HAU Campus++ Login</title>
-        <link rel="icon" type="image/x-icon" href="images/favicon.png">
-        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="img/hau-logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/0541e3b46f.js" crossorigin="anonymous"></script>
+
     </head>
 
-    <body class="index">
+    <body class="login">
+        
+        <div class="card">
 
-        <div class="login-content">
-            <div class="login-header">
-                <img class="hau-logo" src="images/hau-logo.png">           
+            <div class="blank-block">
+                <h1>User Login</h1>
             </div>
-            <div class="login-body">
-                <form id="loginForm">
-                    <div class="information-header">
-                        <div class="student-info">
-                            <div class="student-number">
-                                <input type="text" placeholder="12345678" inputmode="numeric" pattern="[0-9]*" minlength="8" maxlength="8" required>
-                                <i class="fa-solid fa-user"></i>
-                            </div>
-                            <div class="student-password">
-                                <input type="password" placeholder="Password" minlength="8" maxlength="30" required>
-                                <i class="fa-solid fa-lock"></i>
-                            </div>
-                        </div>
-                        <div class="process-info">
-                            <div class="remember-me">
-                                <input name="rememberMe" type="checkbox">
-                                <label>Remember me</label>
-                            </div>
-                            <div class="forgot-password">
-                                <a href="">Forgot password?</a>
-                                <!--Placeholder anchor tag-->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="login-button">
-                        <a href="">
-                            <!--Placeholder anchor tag-->
-                            <input type="submit" value="Log in"></input>
-                        </a>
-                    </div>
-                </form>
-                <div class="information-footer">
-                    <div class="school-info">
-                        <p>ONLINE is the new campus! You can still make your BEST MOMENTS at Holy Angel University by getting full access to all relevant academic and non-academic information, services, and processes through CAMPUS ++.</p>
-                    </div>    
+
+            <div class="primary-block">
+                <img class="logo" src="img/hau-logo.png">
+                <h3>Holy Angel University Campus Portal</h3>
+            </div>
+
+            <form id="loginForm" class="blank-block column">
+
+                <div class="blank-block center-align">
+                    <i class="fa-solid fa-user input-anchor"></i>
+                    <input class="secondary-block" type="text" placeholder="ID Number" inputmode="numeric" pattern="[0-9]*" minlength="8" maxlength="8" required>
                 </div>
+
+                <div class="blank-block center-align">
+                    <i class="fa-solid fa-lock input-anchor"></i>
+                    <input class="secondary-block" type="password" placeholder="Password" minlength="8" required>
+                </div>
+
+                <div class="blank-block space-between">
+
+                    <div class="blank-block extra-small-gap">
+                        <input type="checkbox" value="Remember Me"> <label>Remember Me</label>
+                    </div>
+
+                    <div class="blank-block flex-end">
+                        <a href="forgot-password.html">Forgot Password?</a>
+                    </div>
+
+                </div>
+
+                <input class="primary-block" type="submit" value="Log in">    
+
+            </form>
+
+            <div class="blank-block small-text center-text">
+                <p>ONLINE is the new campus! You can still make your BEST MOMENTS at Holy Angel University by getting full access to all relevant academic and non-academic information, services, and processes through CAMPUS ++.</p>
             </div>
+
         </div>
 
-        <script src="scripts/login.js"></script>
+        <script src="js/script.js" async defer></script>
 
     </body>
 

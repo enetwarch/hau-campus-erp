@@ -5,7 +5,7 @@ This is a mock rework for the [**HAU Portal**](https://hau.campus-erp.com/) webs
 ### Development Checklist
 
 - [x] Login Page
-- [ ] Forgot Password
+- [x] Forgot Password
 - [ ] Dashboard
 - [ ] Student Info
 - [ ] Enrollment
@@ -15,7 +15,7 @@ This is a mock rework for the [**HAU Portal**](https://hau.campus-erp.com/) webs
 
 ### Tech Stack
 
-**All of the technology used in this project is front-end**. As this is just a mock rework, there will be no backend that will deal with authentication, databasees, API, etc.. **No frameworks or libraries were used**, meaning all of this is made from vanilla web development languages.
+**All of the technology used in this project is front-end**. As this is just a mock rework, there will be no backend that will deal with authentication, databases, API, etc.. **No frameworks or libraries were used**, meaning all of this is made from vanilla web development languages.
 
 * **HTML5**: For the semantic structure of the website.
 * **CSS3**: Styles the HTML to make it look more modern and to increase UI and UX experience.

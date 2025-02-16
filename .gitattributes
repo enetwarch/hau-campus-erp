@@ -1,0 +1,2 @@
+docs/img/* linguist-vendored
+# Does not count image files toward language weighing calculations.

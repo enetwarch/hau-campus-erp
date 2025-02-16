@@ -85,6 +85,10 @@ body,
     gap: var(--small-sizing);
 }
 
+.clickable:hover {
+    cursor: pointer;
+}
+
 .logo,
 .profile {
     border-radius: 100%;
@@ -108,14 +112,23 @@ body,
     color: inherit;
 }
 
-.login i.input-anchor {
-    color: var(--primary-color);
-    padding: calc(var(--small-sizing) + var(--extra-small-sizing));
-    position: absolute;
-}
-
 .login input.secondary-block {
     padding-left: calc(var(--large-sizing) + var(--small-sizing));
+    position: relative;
+}
+
+.login i.input-anchor {
+    color: var(--primary-color);
+    padding-left: calc(var(--small-sizing) + var(--extra-small-sizing));
+    position: absolute;
+    z-index: 1;
+}
+
+.login input[type="checkbox"] {
+    height: var(--medium-sizing);
+    transform: scale(1);
+    transform-origin: center;
+    width: var(--medium-sizing);
 }
 
 .header {

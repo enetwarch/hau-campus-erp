@@ -1,2 +1,7 @@
 docs/img/* linguist-vendored
 # Does not count image files toward language weighing calculations.
+
+*.html linguist-language=HTML
+*.css linguist-language=CSS
+*.js linguist-language=JavaScript
+# Linguist language detection.

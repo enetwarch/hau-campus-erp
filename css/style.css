@@ -23,6 +23,10 @@
     padding: 0;
 }
 
+html {
+    font-size: clamp(8px, 1.5vw, 16px);
+}
+
 body {
     align-items: center;
     display: flex;
@@ -178,15 +182,15 @@ a {
     width: 100%;
 }
 
+.login .action-field *:hover {
+    cursor: pointer;
+}
+
 .login .action-field .left {
     align-items: center;
     display: flex;
     gap: var(--extra-small);
     width: 100%;
-}
-
-.login .action-field .left > *:hover {
-    cursor: pointer;
 }
 
 .login .action-field .right {
@@ -265,36 +269,9 @@ a {
 }
 
 @media only screen and (max-width: 1200px) {
-    html {
-        font-size: 14px;
-    }
     .details, 
     .details > * {
         display: none;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    html {
-        font-size: 12px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    html {
-        font-size: 10px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    html {
-        font-size: 9px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    html {
-        font-size: 8px;
     }
 }
 

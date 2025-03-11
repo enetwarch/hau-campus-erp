@@ -1,17 +1,6 @@
-# Holy Angel University Campus Portal
+# [Holy Angel University Campus Portal](https://enetwarch.github.io/hau-campus-erp/)
 
-This is a mock rework for the [**HAU Portal**](https://hau.campus-erp.com/) website. Even though this is not a school requirement, it will help me practice web development fundamentals along with UI and UX design. The website is deployed using [**Github Pages**](https://enetwarch.github.io/hau-campus-erp/) so it can be viewed along with the source code in this repository.
-
-### Development Checklist
-
-- [x] Login Page
-- [x] Forgot Password
-- [ ] Dashboard
-- [ ] Student Info
-- [ ] Enrollment
-- [ ] Library Support
-- [ ] Management
-- [ ] Settings
+This is a mock rework for the [**HAU Portal**](https://hau.campus-erp.com/) website. Even though this is not a school requirement, it will help me practice web development fundamentals along with UI and UX design. The website is deployed using [**Github Pages**](https://pages.github.com/) so it can be viewed along with the source code in this repository.
 
 ### Tech Stack
 
@@ -19,5 +8,9 @@ This is a mock rework for the [**HAU Portal**](https://hau.campus-erp.com/) webs
 
 * **HTML5**: For the semantic structure of the website.
 * **CSS3**: Styles the HTML to make it look more modern and to increase UI and UX experience.
+* **JavaScript**: Slight usage of JavaScript in the login page for redirection and alerts.
+
+### Resources
+
 * [**Font Awesome**](https://fontawesome.com/): Allows access for scalable vector UI for the website.
 * [**Google Fonts**](https://fonts.google.com/): Gives access to fonts like [**Bricolage Grotesque**](https://fonts.google.com/specimen/Bricolage+Grotesque) which is used in this website.

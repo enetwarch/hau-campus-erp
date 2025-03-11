@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 
 :root {
-    --size-4: 2rem;
-    --size-3: 1rem;
-    --size-2: 0.75rem;
     --size-1: 0.5rem;
+    --size-2: 0.75rem;
+    --size-3: 1rem;
+    --size-4: 2rem;
     --color-1: #6f151e;
     --color-2: #f7f1e4;
     --light-1: #fafafa;
@@ -39,53 +39,6 @@ body {
 a {
     color: inherit;
     text-decoration: none;
-}
-
-/*
-.card {
-    align-items: center;
-    background-color: var(--light-color-1);
-    border-radius: var(--large-sizing);
-    box-shadow: 1px 1px 6px var(--dark-color-2);
-    color: var(--dark-color-2);
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    gap: var(--medium-sizing);
-    padding: var(--large-sizing);
-}
-*/
-
-.primary-block {
-    align-items: center;
-    background-color: var(--color-1);
-    border: none;
-    color: var(--light-2);
-    display: flex;
-    font-weight: bold;
-    gap: var(--size-3);
-    padding: var(--size-3);
-    width: 100%;
-}
-
-.secondary-block {
-    align-items: center;
-    background-color: var(--color-2);
-    border: none;
-    color: var(--color-1);
-    display: flex;
-    font-weight: bold;
-    gap: var(--size-3);
-    padding: var(--size-3);
-    width: 100%;
-}
-
-.blank-block {
-    border: none;
-    color: inherit;
-    display: flex;
-    gap: var(--size-2);
-    width: 100%;
 }
 
 .login {
@@ -228,16 +181,6 @@ a {
     width: 100%;
 }
 
-/* align-items: center;
-background-color: var(--color-1);
-border: none;
-color: var(--light-2);
-display: flex;
-font-weight: bold;
-gap: var(--size-3);
-padding: var(--size-3);
-width: 100%; */
-
 .dashboard .header .left {
     display: flex;
     gap: var(--size-2);
@@ -348,64 +291,13 @@ width: 100%; */
 }
 
 @media only screen and (max-width: 1200px) {
-    .details, 
-    .details * {
+    .dashboard .header .details * {
         display: none;
     }
 }
 
-.ai-center {
-    align-items: center;
-}
-
-.fd-column {
-    flex-direction: column;
-}
-
-.fg-children > * {
-    flex-grow: 1;
-}
-
-.fg-self {
-    flex-grow: 1;
-}
-
-.fs-small {
-    font-size: var(--small-sizing);
-}
-
-.g-extra-small {
-    gap: var(--extra-small-sizing);
-}
-
-.g-none {
-    gap: none;
-}
-
-.jc-center {
-    justify-content: center;
-}
-
-.jc-flex-end {
-    justify-content: flex-end;
-}
-
-.jc-space-between {
-    justify-content: space-between;
-}
-
-.mb-medium {
-    margin-block: var(--medium-sizing);
-}
-
-.ta-center {
-    text-align: center;
-}
-
-.ta-right {
-    text-align: right;
-}
-
-.tw-no-wrap {
-    text-wrap: nowrap;
+@media only screen and (max-width: 500px) {
+    .dashboard .nav .details {
+        display: none;
+    }
 }

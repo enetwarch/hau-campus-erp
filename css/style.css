@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 
 :root {
-    --large: 2rem;
-    --medium: 1rem;
-    --small: 0.75rem;
-    --extra-small: 0.5rem;
+    --size-4: 2rem;
+    --size-3: 1rem;
+    --size-2: 0.75rem;
+    --size-1: 0.5rem;
     --color-1: #6f151e;
     --color-2: #f7f1e4;
     --light-1: #fafafa;
@@ -63,8 +63,8 @@ a {
     color: var(--light-2);
     display: flex;
     font-weight: bold;
-    gap: var(--medium);
-    padding: var(--medium);
+    gap: var(--size-3);
+    padding: var(--size-3);
     width: 100%;
 }
 
@@ -75,17 +75,17 @@ a {
     color: var(--color-1);
     display: flex;
     font-weight: bold;
-    gap: var(--medium);
-    padding: var(--medium);
+    gap: var(--size-3);
+    padding: var(--size-3);
     width: 100%;
 }
 
 .blank-block {
     border: none;
-    display: flex;
-    width: 100%;
     color: inherit;
-    gap: var(--small);
+    display: flex;
+    gap: var(--size-2);
+    width: 100%;
 }
 
 .clickable:hover {
@@ -105,17 +105,17 @@ a {
 .login .card {
     align-items: center;
     background-color: var(--light-1);
-    border-radius: var(--large);
+    border-radius: var(--size-4);
     box-shadow: 1px 1px 6px var(--dark-2);
     display: flex;
     flex-direction: column;
-    gap: var(--medium);
+    gap: var(--size-3);
     max-width: 25rem;
-    padding: var(--large);
+    padding: var(--size-4);
 }
 
 .login .card * {
-    border-radius: var(--medium);
+    border-radius: var(--size-3);
 }
 
 .login .header-text {
@@ -130,9 +130,9 @@ a {
     color: var(--light-2);
     display: flex;
     font-weight: bold;
-    gap: var(--medium);
-    margin-block: var(--medium);
-    padding: var(--medium);
+    gap: var(--size-3);
+    margin-block: var(--size-3);
+    padding: var(--size-3);
     width: 100%;
 }
 
@@ -144,7 +144,7 @@ a {
 .login .form {
     display: flex;
     flex-direction: column;
-    gap: var(--small);
+    gap: var(--size-2);
     width: 100%;
 }
 
@@ -155,7 +155,7 @@ a {
 
 .login .fa-solid {
     color: var(--color-1);
-    padding-left: calc(var(--small) + var(--extra-small));
+    padding-left: calc(var(--size-2) + var(--size-1));
     position: absolute;
 }
 
@@ -163,10 +163,10 @@ a {
     background-color: var(--color-2);
     border: none;
     color: var(--color-1);
-    font-size: var(--medium);
+    font-size: var(--size-3);
     font-weight: bold;
-    padding: var(--medium);
-    padding-left: calc(var(--large) + var(--small));
+    padding: var(--size-3);
+    padding-left: calc(var(--size-4) + var(--size-2));
     width: 100%;
 }
 
@@ -177,7 +177,7 @@ a {
 .login .action-field {
     color: var(--dark-2);
     display: flex;
-    gap: var(--small);
+    gap: var(--size-2);
     justify-content: center;
     width: 100%;
 }
@@ -189,7 +189,7 @@ a {
 .login .action-field .left {
     align-items: center;
     display: flex;
-    gap: var(--extra-small);
+    gap: var(--size-1);
     width: 100%;
 }
 
@@ -200,20 +200,20 @@ a {
 }
 
 .login .checkbox {
-    height: var(--medium);
+    height: var(--size-3);
     transform: scale(1);
     transform-origin: center;
-    width: var(--medium);
+    width: var(--size-3);
 }
 
 .login .button {
     background-color: var(--color-1);
     border: none;
     color: var(--light-2);
-    font-size: var(--medium);
+    font-size: var(--size-3);
     font-weight: bold;
-    margin-block: var(--medium);
-    padding: var(--medium);
+    margin-block: var(--size-3);
+    padding: var(--size-3);
 }
 
 .login .button:hover {
@@ -222,13 +222,66 @@ a {
 
 .login .footer {
     color: var(--dark-2);
-    font-size: var(--small);
+    font-size: var(--size-2);
     text-align: center;
 }
 
 .header {
+    align-items: center;
+    background-color: var(--color-1);
+    color: var(--light-2);
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
     max-height: 10rem;
-    padding: var(--large);
+    padding: var(--size-4);
+    width: 100%;
+}
+
+.header .left {
+    display: flex;
+    gap: var(--size-2);
+    width: 100%;
+}
+
+.header .left .logo {
+    border-radius: 100%;
+    max-height: 5rem;
+}
+
+.header .left .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.header .center {
+    display: flex;
+    justify-content: center;
+    text-wrap: nowrap;
+    width: 100%;
+}
+
+.header .right {
+    align-items: center;
+    display: flex;
+    gap: var(--size-2);
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.header .right .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    width: 100%;
+}
+
+.header .right .profile {
+    border-radius: 100%;
+    max-height: 5rem;
 }
 
 .nav {

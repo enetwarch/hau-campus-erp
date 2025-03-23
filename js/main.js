@@ -11,7 +11,12 @@ if (path === "" || path === "hau-campus-erp") {
 }
 
 switch (path) {
-    case "dashboard": {
+    case "dashboard":
+    case "student-info":
+    case "enrollment":
+    case "library-support":
+    case "management":
+    case "settings": {
         const headerContainer = document.getElementById("headerContainer");
         const navContainer = document.getElementById("navContainer");
         const contentContainer = document.getElementById("contentContainer");
@@ -20,5 +25,6 @@ switch (path) {
         const nav = new Nav(navContainer, path);
         const content = new Maintenance(contentContainer);
         const footer = new Footer(footerContainer);
+        break;
     }
 }

@@ -11,6 +11,23 @@ if (path === "" || path === "hau-campus-erp") {
 }
 
 switch (path) {
+    case "login": {
+        const loginForm = document.getElementById("loginForm");
+        loginForm.addEventListener("submit", event => {
+            event.preventDefault();
+            window.location.href = "dashboard";
+        });
+        break;
+    }
+    case "forgot-password": {
+        const emailForm = document.getElementById("emailForm");
+        emailForm.addEventListener("submit", event => {
+            event.preventDefault();
+            const emailInput = document.getElementById("emailInput").value;
+            alert(`Verification email sent to ${emailInput}.`);
+        });
+        break;
+    }
     case "dashboard":
     case "student-info":
     case "enrollment":

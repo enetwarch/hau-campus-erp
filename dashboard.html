@@ -9,26 +9,12 @@
         <link rel="stylesheet" href="css/style.css">
         <script src="https://kit.fontawesome.com/0541e3b46f.js" crossorigin="anonymous"></script>
     </head>
-    <body class="dashboard">
-        <div class="dashboard-container">
-            <div class="header-container">
-                <div class="header-left">
-                    <img class="logo" src="img/logo.png" alt="Logo">
-                    <div class="header-left-text-container">
-                        <h2 class="header-left-header-text">Holy Angel University</h2>
-                        <p class="header-left-text">BS in Computer Science</p>
-                    </div>
-                </div>
-                <h1 class="header-center">Campus Portal</h1>
-                <div class="header-right">
-                    <div class="header-right-text-container">
-                        <h2 class="header-right-header-text">John Doe</h2>
-                        <p class="header-right-text">First Year College Student</p>
-                    </div>
-                    <img class="profile" src="img/profile.jpg" alt="Profile">
-                </div>
+    <body>
+        <div id="dashboardContainer" class="dashboard-container">
+            <div id="headerContainer" class="header-container">
+
             </div>
-            <div class="nav-container">
+            <div id="navContainer" class="nav-container">
                 <a id="currentPage" class="nav-field" href="dashboard">
                     <i class="nav-icon fa-solid fa-table-columns"></i>
                     <p class="nav-text details">Dashboard</p>
@@ -54,13 +40,16 @@
                     <p class="nav-tex details">Settings</p>
                 </a>
             </div>
-            <div class="content-container">
+            <div id="contentContainer" class="content-container">
                 <div class="maintenance-container">
                     <i class="maintenance-icon fa-solid fa-screwdriver-wrench"></i>
                     <h1 class="maintenance-text">UNDER MAINTENANCE</h1>    
                 </div>
             </div>
-            <p class="footer-text">All rights reserved, © 2020 DATAMOBILITY Corporation Philippines. Unit 1103, 11th Floor, Galleria Corporate Center, EDSA cor. Ortigas Ave. Ugong Norte Quezon City Telephone: (02) 914-2960</p>
+            <div id="footerContainer" class="footer-container">
+                <p class="footer-text">All rights reserved, © 2020 DATAMOBILITY Corporation Philippines. Unit 1103, 11th Floor, Galleria Corporate Center, EDSA cor. Ortigas Ave. Ugong Norte Quezon City Telephone: (02) 914-2960</p>
+            </div>
         </div>
+        <script type="module" src="js/main.js" async defer></script>
     </body>
 </html>

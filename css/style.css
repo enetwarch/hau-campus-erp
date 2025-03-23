@@ -28,10 +28,6 @@ html {
 }
 
 body {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     min-height: 100vh;
     width: 100%;
 }
@@ -41,11 +37,17 @@ a {
     text-decoration: none;
 }
 
-.login {
+.login-container {
+    align-items: center;
     background-image: url("../img/login-background.jpg");
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
 }
 
-.login .card {
+.login-card {
     align-items: center;
     background-color: var(--light-1);
     border-radius: var(--size-4);
@@ -57,19 +59,20 @@ a {
     padding: var(--size-4);
 }
 
-.login .card * {
+.login-card * {
     border-radius: var(--size-3);
 }
 
-.login .header-text {
+.login-header-text {
     color: var(--dark-2);
     width: 100%;
 }
 
-.login .header-block {
+.login-header-block {
     align-items: center;
     background-color: var(--color-1);
     border: none;
+    border-radius: var(--size-3);
     color: var(--light-2);
     display: flex;
     font-weight: bold;
@@ -79,30 +82,30 @@ a {
     width: 100%;
 }
 
-.login .logo {
+.logo {
     border-radius: 100%;
     max-height: 5rem;
 }
 
-.login .form {
+.form {
     display: flex;
     flex-direction: column;
     gap: var(--size-2);
     width: 100%;
 }
 
-.login .input-field {
+.form-field {
     align-items: center;
     display: flex;
 }
 
-.login .fa-solid {
+.form-field-icon {
     color: var(--color-1);
     padding-left: calc(var(--size-2) + var(--size-1));
     position: absolute;
 }
 
-.login .input {
+.form-field-input {
     background-color: var(--color-2);
     border: none;
     color: var(--color-1);
@@ -113,11 +116,11 @@ a {
     width: 100%;
 }
 
-.login .input::placeholder {
+.form-field-input::placeholder {
     color: inherit;
 }
 
-.login .action-field {
+.action-field {
     color: var(--dark-2);
     display: flex;
     gap: var(--size-2);
@@ -125,31 +128,24 @@ a {
     width: 100%;
 }
 
-.login .action-field *:hover {
+.action-field *:hover {
     cursor: pointer;
 }
 
-.login .action-field .left {
+.action-field-left {
     align-items: center;
     display: flex;
     gap: var(--size-1);
     width: 100%;
 }
 
-.login .action-field .right {
+.action-field-right {
     display: flex;
     justify-content: flex-end;
     width: 100%;
 }
 
-.login .checkbox {
-    height: var(--size-3);
-    transform: scale(1);
-    transform-origin: center;
-    width: var(--size-3);
-}
-
-.login .button {
+.button {
     background-color: var(--color-1);
     border: none;
     color: var(--light-2);
@@ -159,11 +155,11 @@ a {
     padding: var(--size-3);
 }
 
-.login .button:hover {
+.button:hover {
     cursor: pointer;
 }
 
-.login .footer {
+.footer-text {
     color: var(--dark-2);
     font-size: var(--size-2);
     text-align: center;

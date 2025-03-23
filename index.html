@@ -6,35 +6,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Campus Login</title>
         <link rel="icon" type="image/ico" href="img/logo.ico">
-        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/style.css">
         <script src="https://kit.fontawesome.com/0541e3b46f.js" crossorigin="anonymous"></script>
     </head>
-    <body class="login">
-        <div class="card">
-            <h1 class="header-text">User Login</h1>
-            <div class="header-block">
-                <img class="logo" src="img/logo.png" alt="Logo">
-                <h3>Holy Angel University Campus Portal</h3>
-            </div>
-            <form id="loginForm" class="form">
-                <div class="input-field">
-                    <i class="fa-solid fa-user"></i>
-                    <input class="input" type="text" placeholder="ID Number" inputmode="numeric" pattern="[0-9]*" minlength="8" maxlength="8" required>
+    <body>
+        <div class="login-container">
+            <div class="login-card">
+                <h1 class="login-header-text">User Login</h1>
+                <div class="login-header-block">
+                    <img class="logo" src="img/logo.png" alt="Logo">
+                    <h3>Holy Angel University Campus Portal</h3>
                 </div>
-                <div class="input-field">
-                    <i class="fa-solid fa-lock"></i>
-                    <input class="input" type="password" placeholder="Password" minlength="8" required>    
-                </div>
-                <div class="action-field">
-                    <div class="left">
-                        <input id="rememberMe" class="checkbox" type="checkbox"> 
-                        <label for="rememberMe">Remember Me</label>
+                <form id="loginForm" class="form">
+                    <div class="form-field">
+                        <i class="form-field-icon fa-solid fa-user"></i>
+                        <input class="form-field-input" type="text" placeholder="ID Number" inputmode="numeric" pattern="[0-9]*" minlength="8" maxlength="8" required>
                     </div>
-                    <a id="forgot" class="right" href="forgot-password">Forgot Password?</a>
-                </div>
-                <input class="button" type="submit" value="Log In">    
-            </form>
-            <p class="footer">ONLINE is the new campus! You can still make your BEST MOMENTS at Holy Angel University by getting full access to all relevant academic and non-academic information, services, and processes through CAMPUS ++.</p>
+                    <div class="form-field">
+                        <i class="form-field-icon fa-solid fa-lock"></i>
+                        <input class="form-field-input" type="password" placeholder="Password" minlength="8" required>    
+                    </div>
+                    <div class="action-field">
+                        <div class="action-field-left">
+                            <input id="rememberMe" class="action-field-checkbox" type="checkbox"> 
+                            <label for="rememberMe">Remember Me</label>
+                        </div>
+                        <a class="action-field-right" href="forgot-password">Forgot Password?</a>
+                    </div>
+                    <input class="button" type="submit" value="Log In">    
+                </form>
+                <p class="footer-text">ONLINE is the new campus! You can still make your BEST MOMENTS at Holy Angel University by getting full access to all relevant academic and non-academic information, services, and processes through CAMPUS ++.</p>
+            </div>
+    
         </div>
         <script src="js/login.js" async defer></script>
     </body>

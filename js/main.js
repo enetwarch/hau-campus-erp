@@ -12,15 +12,10 @@ window.addEventListener("load", () => {
     const warning = new Warning(media, iconClass, message);
 });
 
-let path = window.location.pathname;
-path = path.split("/").slice(-1)[0];
-path = path.replace(".html", "");
-if (path === "" || path === "hau-campus-erp") {
-    path = "login";
-}
+const page = document.body.dataset.page;
 
-switch (path) {
-    case "login": {
+switch (page) {
+    case "index": {
         const loginForm = document.getElementById("loginForm");
         loginForm.addEventListener("submit", event => {
             event.preventDefault();

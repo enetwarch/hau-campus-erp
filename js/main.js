@@ -1,31 +1,16 @@
+import Warning from "./modules/warning.js";
 import Header from "./modules/header.js";
 import Nav from "./modules/nav.js";
 import Maintenance from "./modules/maintenance.js";
 import Footer from "./modules/footer.js";
 
-const desktop = window.matchMedia("(min-width: 1537px)");
-desktop.addEventListener("change", event => handleWarning(event));
-desktop.addEventListener("load", () => handleWarning(desktop));
+window.addEventListener("load", () => {
+    const media = window.matchMedia("(min-width: 1537px)");
+    const iconClass = "fa-desktop";
+    const message = "Please view on desktop";
 
-function handleWarning(event) {
-    if (event.matches) {
-        const warning = document.querySelector(".warning");
-        if (warning) warning.remove();
-    } else {
-        const warning = document.createElement("div");
-        warning.classList.add("warning");
-        const warningContainer = document.createElement("div");
-        warningContainer.classList.add("warning-container");
-        const warningIcon = document.createElement("i");
-        warningIcon.classList.add("warning-icon", "fa-solid", "fa-desktop");
-        const warningText = document.createElement("h1");
-        warningText.classList.add("warning-text");
-        warningText.innerText = "Please view on desktop";
-        warningContainer.append(warningIcon, warningText);
-        warning.appendChild(warningContainer);
-        document.body.appendChild(warning);
-    }
-}
+    const warning = new Warning(media, iconClass, message);
+});
 
 let path = window.location.pathname;
 path = path.split("/").slice(-1)[0];

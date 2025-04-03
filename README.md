@@ -1,6 +1,6 @@
-# [Holy Angel University Campus Portal](https://enetwarch.github.io/hau-campus-erp/)
+# Holy Angel University Campus Portal
 
-This is a mock rework for the [**HAU Portal**](https://hau.campus-erp.com/) website. Even though this is not a school requirement, it will help me practice web development fundamentals along with UI and UX design. The website is deployed using [**Github Pages**](https://pages.github.com/) so it can be viewed along with the source code in this repository.
+This is a mock rework for the [**HAU Portal**](https://hau.campus-erp.com/) website. Even though this is not a school requirement, it will help me practice web development fundamentals along with UI and UX design. The website is deployed using [**Github Pages**](https://pages.github.com/) so the [live demo](https://enetwarch.github.io/hau-campus-erp/) can be viewed along with the source code in this repository.
 
 > [!WARNING]
 > The website can only be viewed on desktop wide screens.
@@ -17,3 +17,7 @@ This is a mock rework for the [**HAU Portal**](https://hau.campus-erp.com/) webs
 
 * [**Font Awesome**](https://fontawesome.com/): Allows access for scalable vector UI for the website.
 * [**Google Fonts**](https://fonts.google.com/): Gives access to fonts like [**Bricolage Grotesque**](https://fonts.google.com/specimen/Bricolage+Grotesque) which is used in this website.
+
+### License
+
+* [MIT License](LICENSE)

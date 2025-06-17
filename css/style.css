@@ -11,16 +11,17 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Bricolage Grotesque", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 body {
+  align-items: center;
   background-color: var(--color-background);
   color: var(--color-foreground);
   display: flex;
   flex-direction: column;
-  font-family: "Bricolage Grotesque", serif;
   justify-content: center;
   min-height: 100vh;
   min-width: 100%;
@@ -62,17 +63,12 @@ a {
   }
 }
 
-.login-container {
-  align-items: center;
-  background-image: url("../img/login-background.jpg");
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center;
-  width: 100%;
+body[data-page="index"],
+body[data-page="forgot-password"] {
+  background-image: url("../img/background.jpg");
 }
 
-.login-card {
+.form {
   align-items: center;
   background-color: var(--color-background);
   border-radius: 2rem;
@@ -84,20 +80,16 @@ a {
   padding: 2rem;
 }
 
-.login-card * {
-  border-radius: 1rem;
-}
-
-.login-header-text {
+.form__heading {
   color: var(--color-muted-foreground);
   width: 100%;
 }
 
-.login-header-block {
+.form__header {
   align-items: center;
   background-color: var(--color-primary);
   border: none;
-  color: var(--color-surface);
+  border-radius: 1rem;
   display: flex;
   font-weight: bold;
   gap: 1rem;
@@ -106,72 +98,101 @@ a {
   width: 100%;
 }
 
-.logo {
+.form__header-logo {
   border-radius: 100%;
   max-height: 5rem;
 }
 
-.form {
+.form__header-text {
+  color: var(--color-surface);
+  font-size: 1.15rem;
+}
+
+.form__main {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
   width: 100%;
 }
 
-.form-field {
+.form__section {
   align-items: center;
   display: flex;
+  width: 100%;
 }
 
-.form-field-icon {
+.form__section--input {
+  flex-direction: column;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.form__section--action {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form__input-field {
+  align-items: center;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.form__input-field-icon {
   color: var(--color-primary);
-  padding-left: calc(0.75rem + 0.5rem);
+  padding-left: 1.25rem;
   position: absolute;
 }
 
-.form-field-input {
+.form__input-field-input {
   background-color: var(--color-secondary);
   border: none;
+  border-radius: 1rem;
   color: var(--color-primary);
   font-size: 1rem;
   font-weight: bold;
   padding: 1rem;
-  padding-left: 2.5rem;
+  padding-left: 2.75rem;
   width: 100%;
 }
 
-.form-field-input::placeholder {
+.form__input-field-input::placeholder {
   color: inherit;
 }
 
-.action-field {
-  color: var(--color-muted-foreground);
+.form__action-field {
+  align-items: center;
   display: flex;
-  gap: 0.75rem;
+  gap: 0.5rem;
   justify-content: center;
   width: 100%;
 }
 
-.action-field *:hover {
+.form__action-field *:hover {
   cursor: pointer;
 }
 
-.action-field-left {
-  align-items: center;
-  display: flex;
-  gap: 0.5rem;
-  width: 100%;
+.form__action-field--left {
+  justify-content: flex-start;
 }
 
-.action-field-right {
-  display: flex;
+.form__action-field--right {
   justify-content: flex-end;
-  width: 100%;
 }
 
-.button {
+.form__label {
+  color: var(--color-muted-foreground);
+}
+
+.form__link {
+  color: var(--color-muted-foreground);
+}
+
+.form__button {
   background-color: var(--color-primary);
   border: none;
+  border-radius: 1rem;
   color: var(--color-surface);
   font-size: 1rem;
   font-weight: bold;
@@ -179,11 +200,18 @@ a {
   padding: 1rem;
 }
 
-.button:hover {
+.form__button:hover {
   cursor: pointer;
 }
 
-.login-footer-text {
+.form__footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.form__footer-text {
   color: var(--color-muted-foreground);
   font-size: 0.75rem;
   text-align: center;
@@ -240,9 +268,9 @@ a {
 }
 
 .header__text {
+  color: var(--color-surface);
   text-wrap: nowrap;
   white-space: nowrap;
-  color: var(--color-surface);
 }
 
 .header__text--heading {
@@ -322,15 +350,15 @@ a {
 }
 
 .maintenance__icon {
-  font-size: 15rem;
   color: var(--color-muted-foreground);
+  font-size: 15rem;
 }
 
 .maintenance__text {
+  color: var(--color-muted-foreground);
   font-size: 2rem;
   text-align: center;
   text-wrap: nowrap;
-  color: var(--color-muted-foreground);
 }
 
 .footer {

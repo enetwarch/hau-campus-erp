@@ -14,34 +14,38 @@
       <i class="warning__icon fa-solid fa-desktop"></i>
       <h2 class="warning__text">Please View on Desktop</h2>
     </aside>
-    <div class="login-container">
-      <div class="login-card">
-        <h1 class="login-header-text">User Login</h1>
-        <div class="login-header-block">
-          <img class="logo" src="img/logo.png" alt="Logo">
-          <h3>Holy Angel University Campus Portal</h3>
-        </div>
-        <form id="loginForm" class="form">
-          <div class="form-field">
-            <i class="form-field-icon fa-solid fa-user"></i>
-            <input class="form-field-input" type="text" placeholder="ID Number" inputmode="numeric" pattern="[0-9]*" minlength="8" maxlength="8" required>
+    <form id="login-form" class="form">
+      <h1 class="form__heading">User Login</h1>
+      <header class="form__header">
+        <img class="form__header-logo" src="./img/logo.png" alt="Logo">
+        <h2 class="form__header-text">Holy Angel University Campus Portal</h2>
+      </header>
+      <main class="form__main">
+        <section aria-label="Field Set" class="form__section form__section--input">
+          <div class="form__input-field">
+            <i class="form__input-field-icon fa-solid fa-user"></i>
+            <input id="id-number" class="form__input-field-input" type="text" placeholder="ID Number" inputmode="numeric" minlength="8" maxlength="8" pattern="[0-9]{8}" required>
           </div>
-          <div class="form-field">
-            <i class="form-field-icon fa-solid fa-lock"></i>
-            <input class="form-field-input" type="password" placeholder="Password" minlength="8" required>    
+          <div class="form__input-field">
+            <i class="form__input-field-icon fa-solid fa-lock"></i>
+            <input id="password" class="form__input-field-input" type="password" placeholder="Password" minlength="8" required>    
           </div>
-          <div class="action-field">
-            <div class="action-field-left">
-              <input id="rememberMe" class="action-field-checkbox" type="checkbox"> 
-              <label for="rememberMe">Remember Me</label>
-            </div>
-            <a class="action-field-right" href="forgot-password">Forgot Password?</a>
+        </section>
+        <section aria-label="Call To Action" class="form__section form__section--action">
+          <div class="form__action-field form__action-field--left">
+            <input id="remember-me" class="form__checkbox" type="checkbox"> 
+            <label class="form__label" for="remember-me">Remember Me</label>
           </div>
-          <input class="button" type="submit" value="Log In">    
-        </form>
-        <p class="login-footer-text">ONLINE is the new campus! You can still make your BEST MOMENTS at Holy Angel University by getting full access to all relevant academic and non-academic information, services, and processes through CAMPUS ++.</p>
-      </div>
-    </div>
+          <div class="form__action-field form__action-field--right">
+            <a class="form__link" href="./forgot-password">Forgot Password?</a>
+          </div>
+        </section>
+        <input class="form__button" type="submit" value="Log In">
+      </main>
+      <footer class="form__footer">
+        <p class="form__footer-text">ONLINE is the new campus! You can still make your BEST MOMENTS at Holy Angel University by getting full access to all relevant academic and non-academic information, services, and processes through CAMPUS ++.</p>
+      </footer>
+    </form>
     <script type="module" src="./js/main.js" async defer></script>
   </body>
 </html>

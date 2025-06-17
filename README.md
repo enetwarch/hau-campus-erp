@@ -1,23 +1,23 @@
 # Holy Angel University Campus Portal
 
-This is a mock rework for the [**HAU Portal**](https://hau.campus-erp.com/) website. Even though this is not a school requirement, it will help me practice web development fundamentals along with UI and UX design. The website is deployed using [**Github Pages**](https://pages.github.com/) so the [live demo](https://enetwarch.github.io/hau-campus-erp/) can be viewed along with the source code in this repository.
+This is a mock rework for the [**HAU Portal**](https://hau.campus-erp.com/) website. Even though this is not a school requirement, it will help me practice web development fundamentals along with UI and UX design skills. The website is deployed using [**Github Pages**](https://pages.github.com/), allowing access to the [live demo](https://enetwarch.github.io/hau-campus-erp/).
 
 > [!WARNING]
 > The website can only be viewed on desktop wide screens.
 
-### Tech Stack
+## Tech Stack
 
 **All of the technology used in this project is front-end**. As this is just a mock rework, there will be no backend that will deal with authentication, databases, API, etc.. **No frameworks or libraries were used**, meaning all of this is made from vanilla web development languages.
 
 * **HTML5**: For the semantic structure of the website.
 * **CSS3**: Styles the HTML to make it look more modern and to increase UI and UX experience.
-* **JavaScript**: Redirection, alerts, warning popup, and dynamic DOM manipulation.
+* **JavaScript**: Redirection and alert for the forms.
 
-### Resources
+## Resources
 
 * [**Font Awesome**](https://fontawesome.com/): Allows access for scalable vector UI for the website.
 * [**Google Fonts**](https://fonts.google.com/): Gives access to fonts like [**Bricolage Grotesque**](https://fonts.google.com/specimen/Bricolage+Grotesque) which is used in this website.
 
-### License
+## License
 
-* [MIT License](LICENSE)
+This project is licensed under the [MIT license](./LICENSE).

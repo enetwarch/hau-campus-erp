@@ -2,8 +2,16 @@
 
 This is a mock rework for the [**HAU Portal**](https://hau.campus-erp.com/) website. Even though this is not a school requirement, it will help me practice web development fundamentals along with UI and UX design skills. The website is deployed using [**Github Pages**](https://pages.github.com/), allowing access to the [live demo](https://enetwarch.github.io/hau-campus-erp/).
 
-> [!WARNING]
-> The website can only be viewed on desktop wide screens.
+## Pages
+
+* [/](./index.html): Securely log in to the Holy Angel University Campus Portal and access personalized academic services.
+* [/forgot-password](./forgot-password.html): Recover access to your account through the secure password reset process.
+* [/dashboard](./dashboard.html): Get a quick overview of your academic activity, recent updates, and campus announcements.
+* [/student-info](./student-info.html): Manage your personal and academic information, including ID number, email, and more.
+* [/enrollment](./enrollment.html): Submit enrollment forms, view current course registration, and monitor application status.
+* [/library-support](./library-support.html): Browse helpful resources and support for campus library access and academic tools.
+* [/management](./management.html): View and manage key administrative features related to student services and academic progress.
+* [/settings](./settings.html): Customize your account preferences and configure portal settings for a more personal experience.
 
 ## Tech Stack
 

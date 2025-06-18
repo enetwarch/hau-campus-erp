@@ -1,6 +1,12 @@
-const form = document.getElementById("login-form");
+window.addEventListener("DOMContentLoaded", () => {
+  const controller = new AbortController();
+  const signal = controller.signal;
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  window.location.href = "dashboard";
+  const loginFormElement = document.getElementById("login-form");
+  loginFormElement.addEventListener("submit", (event) => {
+    event.preventDefault();
+    window.location.href = "dashboard";
+  }, { signal });
+
+  window.addEventListener("beforeunload", () => controller.abort());
 });

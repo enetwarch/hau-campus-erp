@@ -1,10 +1,16 @@
-const form = document.getElementById("forgot-password-form");
+window.addEventListener("DOMContentLoaded", () => {
+  const controller = new AbortController();
+  const signal = controller.signal;
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+  const forgotPasswordFormElement = document.getElementById("forgot-password-form");
+  forgotPasswordFormElement.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-  const formData = new FormData(form);
-  const email = formData.get("email");
+    const formData = new FormData(forgotPasswordFormElement);
+    const email = formData.get("email");
 
-  alert(`Verification email has been sent to ${email}. Please check your inbox.`);
+    alert(`A verification email has been sent to ${email}.`);
+  }, { signal });
+
+  window.addEventListener("beforeunload", () => controller.abort());
 });

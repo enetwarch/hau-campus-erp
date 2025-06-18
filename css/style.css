@@ -37,10 +37,12 @@ a {
   display: none;
   flex-direction: column;
   gap: 1rem;
+  inset: 0;
   justify-content: center;
   min-height: 100vh;
   min-width: 100%;
-  z-index: 1;
+  position: fixed;
+  z-index: 9999;
 }
 
 .warning__icon {

@@ -12,6 +12,7 @@ This is a mock rework for the [**HAU Portal**](https://hau.campus-erp.com/) webs
 * [/library-support](./library-support.html): Browse helpful resources and support for campus library access and academic tools.
 * [/management](./management.html): View and manage key administrative features related to student services and academic progress.
 * [/settings](./settings.html): Customize your account preferences and configure portal settings for a more personal experience.
+* [/404](./404.html): The page you're looking for couldn't be found. Return to the homepage or navigate to a different section of the portal.
 
 ## Tech Stack
 
